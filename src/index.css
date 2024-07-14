@@ -1,0 +1,87 @@
+/* import font on top line (important) */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center
+    }   
+}
+
+.btn {
+    @apply px-3 py-2.5 shadow-xl z-10 inline-flex items-center gap-2 w-fit duration-300;
+}
+
+.btn-filled {
+    @apply rounded bg-primary border-2 border-primary text-white;
+}
+
+.btn-outline {
+    @apply border-2 border-gray-600 dark:text-gray-100 text-gray-600 shadow-xl leading-6 dark:bg-slate-800 bg-white  rounded-lg font-bold;
+}
+
+.btn-link {
+    @apply flex items-center gap-2 dark:text-gray-200 font-semibold border-b-2 border-gray-700
+}
+
+.count[data-slot="count"] {
+    @apply text-3xl font-bold mb-2;
+}
+
+.active {
+    @apply text-second;
+}
+
+.bg-circle-social svg {
+    @apply size-5 p-2 dark:bg-slate-800 bg-gray-100 rounded-full hover:!bg-primary hover:text-white duration-300;
+}
+
+.bg-circle-contact svg {
+    @apply size-10 p-5 dark:bg-slate-800 bg-gray-100 rounded-full group-hover:!bg-primary hover:text-white duration-500 overflow-hidden;
+}
+
+.bg-card-resume {
+    @apply dark:bg-slate-800 bg-gray-100 hover:hover:!bg-primary transition-all duration-300;
+}
+
+.shadow-light {
+    @apply shadow-md group-hover:shadow-fourth/20 group-hover:shadow-md;
+}
+
+.bg-linear-custom {
+    background-image: linear-gradient(to left bottom, #ffbead, #ffc4a0, #ffcc92, #ffd784, #ffe47a, #ffdc80, #ffd587, #ffce8e, #ffbca9, #e8b5c1, #c4b3c3, #aeaeb0)
+}
+
+html {
+    @apply font-oswald overflow-x-hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+section {
+    @apply py-7;
+}
+
+button:hover {
+    @apply scale-95 duration-200;
+}
+
+button, nav, p, address {
+    @apply font-inter font-medium text-[0.87rem];
+}
+
+h3 {
+    @apply md:text-2xl text-xl;
+}
+
+button i {
+    @apply p-0;
+}
+
+input, textarea {
+    @apply border dark:border-gray-500 rounded placeholder:text-sm font-poppins outline-none py-2 px-3 mb-4 resize-none bg-transparent;
+}
