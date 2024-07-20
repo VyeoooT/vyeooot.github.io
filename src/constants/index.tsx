@@ -42,12 +42,12 @@ export const navLinks = {
             link: "projects",
         },
         {
-            _id: 1004,
+            _id: 1005,
             title: "Frameworks",
             link: "frameworks",
         },
         {
-            _id: 1005,
+            _id: 1006,
             title: "Contact",
             link: "contact",
         },
@@ -57,26 +57,26 @@ export const navLinks = {
     ]
 }
 
-export const tabs = {
-    tab: [
-        {
-            _id: 1001,
-            label: "Languages",
-        },
-        {
-            _id: 1002,
-            label: "Databases",
-        },
-        {
-            _id: 1003,
-            label: "Frameworks",
-        },
-        {
-            _id: 1004,
-            label: "Others",
-        },
-    ]
-}
+// export const tabs = {
+//     tab: [
+//         {
+//             _id: 1001,
+//             label: "Languages",
+//         },
+//         {
+//             _id: 1002,
+//             label: "Databases",
+//         },
+//         {
+//             _id: 1003,
+//             label: "Frameworks",
+//         },
+//         {
+//             _id: 1004,
+//             label: "Others",
+//         },
+//     ]
+// }
 
 export const resumeTabs = {
     tab: [
