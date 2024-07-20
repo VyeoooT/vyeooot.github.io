@@ -16,7 +16,9 @@ function WorkJob() {
                     title="WORDPRESS DEVELOPER"
                     subTitle="ALENA ENERGY TECHNOLOGY CO., LTD (07/2023 - 3/2024)"
                     descriptions={[
-                        "Build the UI of WordPress website (introducing the company's images, projects, products and technology solutions)."
+                        "Build the UI of WordPress website (introducing the company's images, projects, products and technology solutions).",
+                        "Building UI for lucky draw website (React Typescript).",
+                        "Build UI for solar power system monitoring app (React Typescript).",
                     ]}
                 />                
 
@@ -37,7 +39,8 @@ function WorkJob() {
                     title="AZODA TECHNOLOGY JOINT STOCK COMPANY LTD"
                     subTitle="WORDPRESS DEVELOPER (12/2021 - 01/2023)"
                     descriptions={[
-                        "Build the UI of WordPress website (introducing the company's images, projects, products and technology solutions)."
+                        "Build the UI multi-page website using ReactJS, React Router (introducing the company's images, projects, products and technology solutions).",
+                        "Build a WordPress sales website (shopping cart, users, inventory, sending promotional emails).",
                     ]}
                 />
             </div>
