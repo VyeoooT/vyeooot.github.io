@@ -14,7 +14,7 @@ interface Props {
 function ProjectCard({ label, description, tag, linkPreview, linkGithub, imgSrc }: Props) {
     return (
         // project card
-        <div className="relative w-80 h-96 space-y-3 dark:bg-slate-700 bg-white border shadow-sm rounded-xl overflow-hidden">
+        <div className="relative w-80 h-96 place-self-center space-y-3 dark:bg-slate-700 bg-white border shadow-sm rounded-xl overflow-hidden">
             {/* img */}
             <div className="w-[19rem] h-40 mx-auto pt-2">
                 <img
