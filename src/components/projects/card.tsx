@@ -31,10 +31,10 @@ function ProjectCard({ label, description, tag, linkPreview, linkGithub, imgSrc 
                 </div>
 
                 <div className="absolute top-40 size-full flex flex-col dark:bg-slate-700 bg-white py-2 z-[1]">
-                    <div className="flex flex-col items-start px-4 space-y-3">
+                    <div className="flex flex-col items-start space-y-3">
                         {/* tag */}
                         {tag && tag.length > 0 &&
-                            <div className="mt-[-0.25rem] space-x-2">
+                            <div className="mt-[-0.25rem] px-2 space-x-2">
                                 {tag.map((item: string, idx: number) => (
                                     <span
                                         key={idx} 
@@ -45,7 +45,7 @@ function ProjectCard({ label, description, tag, linkPreview, linkGithub, imgSrc 
                         }
 
                         {/* label */}
-                        <div className="text-start space-y-2">
+                        <div className="text-start px-4 space-y-2">
                             <span className="text-2xl font-medium text-primary">{label}</span>
                             
                             <p className="md:text-sm text-xs leading-[1.2rem] font-normal">{description}</p>

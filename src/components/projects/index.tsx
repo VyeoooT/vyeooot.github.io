@@ -29,12 +29,13 @@ function Projects() {
                             "Vite",
                             "React Typescript",
                             "Tailwindcss",
+                            "FontAwesome",
                         ]}
-                        label="Project 2"
-                        description=""
-                        linkGithub="#"
-                        linkPreview="#"
-                        imgSrc="https://contents.rizerssoft.com/uploads/large_app101_rizerssoft_online_0c3c4b2271.png"
+                        label="Cards Catalog"
+                        description="Design beautiful cards with tailwindcss and Typescript."
+                        linkGithub="https://github.com/VyeoooT/study-vite-cards"
+                        linkPreview="https://cards-catalog.linhtv.io.vn/"
+                        imgSrc={assets.cardsCatalog}
                     />
 
                     <ProjectCard
