@@ -33,7 +33,7 @@ function GoToTop() {
     }, [])
 
     return (
-        <div className={`fixed right-7 cursor-pointer transition-all duration-700 ${isGoToTop ? 'opacity-100 bottom-7' : 'opacity-0 -bottom-7'}`}>
+        <div className={`fixed right-7 cursor-pointer transition-all duration-700 z-[999] ${isGoToTop ? 'opacity-100 bottom-7' : 'opacity-0 -bottom-7'}`}>
             <button
                 className="w-12 aspect-square px-1 flex justify-center items-center bg-primary shadow-sm shadow-white rounded-full"
                 onClick={handleGoToTop}
