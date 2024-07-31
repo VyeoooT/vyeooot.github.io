@@ -2,6 +2,7 @@ import About from "./components/about"
 import Contact from "./components/contact"
 import LibraryFramework from "./components/frameworks"
 import Footer from "./components/navigations/footer"
+import GoToTop from "./components/navigations/goToTop"
 import Header from "./components/navigations/header"
 import Projects from "./components/projects"
 import Resumes from "./components/resume"
@@ -20,6 +21,7 @@ function App() {
         <Contact />
         <Footer />
       </div>
+      <GoToTop />
     </>
   )
 }
