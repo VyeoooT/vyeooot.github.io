@@ -1,5 +1,4 @@
 import { Link } from 'react-scroll'
-// import { Link } from 'react-router-dom'
 import { navLinks } from '../../constants'
 import assets from '../../assets'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -100,15 +99,17 @@ function Header() {
     return (
         <>
             {/* blur - background */}
-            <div className={`font-inter fixed h-screen bg-black/10 backdrop-blur-sm inset-0 z-[997] ${isBlur ? "block" : "hidden"} duration-300`}></div>
+            <div className={`fixed h-screen bg-black/10 backdrop-blur-sm inset-0 z-[997] ${isBlur ? "block" : "hidden"} duration-300`}></div>
 
             {/* desktop navigation */}
-            <header className="fixed w-full lg:px-0 bg-white dark:text-white dark:bg-slate-800 shadow-lg dark:sm:bg-slate-900 px-5 py-4 z-[999]">
+            <header className="fixed w-full lg:px-0 bg-white dark:text-white dark:bg-slate-800 dark:sm:bg-slate-900 shadow-sm px-5 py-4 z-[999]">
                 {/* navigation */}
                 <nav className="flex justify-between items-center max-w-6xl mx-auto px-2">
                     {/* logo */}
-                    <div className="lg:w-[3%] md:w-[4%] sm:w-[4%] w-[8%]">
-                        <img src={assets.logo} alt="" />
+                    <div className="lg:w-[3%] md:w-[4%] sm:w-[4%] w-[8%] *:cursor-pointer">
+                        <Link to="about">
+                            <img src={assets.logo} alt="logo" />
+                        </Link>
                     </div>
 
                     <ul className="md:flex hidden gap-10 *:cursor-pointer hover:*:text-primary *:duration-300">
@@ -116,11 +117,12 @@ function Header() {
                             <li key={item._id}>
                                 <Link
                                     activeClass='active'
+                                    activeStyle={{ color: "rgb(133 117 85)" }}
                                     to={item.link}
                                     spy={true}
                                     smooth={true}
                                     offset={-50}
-                                    duration={700}
+                                    duration={300}
                                 >
                                     {item.title}
                                 </Link>
