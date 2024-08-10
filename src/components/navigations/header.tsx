@@ -3,7 +3,7 @@ import { navLinks } from '../../constants'
 import assets from '../../assets'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark, faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 function Header() {
     interface HeaderType {
@@ -23,47 +23,48 @@ function Header() {
         isIconBar === faBars ? setIsIconBar(faXmark) : setIsIconBar(faBars)
     }
 
-    const closeMenu = () => {
+    const closeMenu = useCallback(() => {
         setIsMenu(false)
         setIsBlur(false)
         setIsIconBar(faBars)
-    }
+    }, [])
 
     // click link & click outside close menu
     const menuRef = useRef<HTMLUListElement>(null)
     const outsideRef = useRef<HTMLButtonElement>(null)
 
-    const outSide = (e: MouseEvent) => {
+    const outSide = useCallback((e: MouseEvent) => {
         if (outsideRef.current && !outsideRef.current.contains(e.target as Node) && 
             menuRef.current && !menuRef.current.contains(e.target as Node))
         {
             closeMenu()
         }
-    }
+    }, [closeMenu])
 
-    const itemMenu = (e: MouseEvent) => {
+    const itemMenu = useCallback((e: MouseEvent) => {
         const target = e.target as HTMLElement
 
         if (target.tagName === 'A') {
             closeMenu()
         }
-    }
+    }, [closeMenu])
 
     useEffect(() => {
+        const currentMenuRef = menuRef.current
         document.addEventListener("click", outSide, true)
 
-        if (menuRef.current) {
-            menuRef.current.addEventListener("click", itemMenu, true)
+        if (currentMenuRef) {
+            currentMenuRef.addEventListener("click", itemMenu, true)
         }
 
         return () => {
             document.removeEventListener("click", outSide, true)
 
-            if (menuRef.current) {
-                menuRef.current.removeEventListener("click", itemMenu, true)
+            if (currentMenuRef) {
+                currentMenuRef.removeEventListener("click", itemMenu, true)
             }
         }
-    })
+    }, [itemMenu, outSide])
 
     // switch theme
     const [isDark, setIsDark] = useState(false)
@@ -94,9 +95,10 @@ function Header() {
             document.documentElement.classList.remove("dark")
             setIsDark(false)
         }
-    })
+    }, [])
 
     return (
+        console.log("re-render"),
         <>
             {/* blur - background */}
             <div className={`fixed h-screen bg-black/10 backdrop-blur-sm inset-0 z-[997] ${isBlur ? "block" : "hidden"} duration-300`}></div>
