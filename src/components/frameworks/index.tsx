@@ -5,6 +5,7 @@ import Languages from "./contents/languages"
 import Frameworks from "./contents/frameworks"
 import Databases from "./contents/databases"
 import Others from "./contents/others"
+import FadeIn from "../effects"
 
 function LibraryFramework() {
     // tab type
@@ -34,53 +35,55 @@ function LibraryFramework() {
     return (
         // skills
         <section id="frameworks" className="xl:max-w-screen-xl sm:container">
-            <div className="mx-auto md:px-20 px-5">
-                {/* title */}
-                <div className="text-center">
-                    <Title title="Frameworks & Libraries" description="what i do" />
+            <FadeIn>
+                <div className="mx-auto md:px-20 px-5">
+                    {/* title */}
+                    <div className="text-center">
+                        <Title title="Frameworks & Libraries" description="what i do" />
 
-                    {/* tabs */}
-                    {/* <div className="md:flex hidden justify-center items-center space-x-5">
-                        {tabs.tab.map((item: TabType) => (
-                            <button
-                                key={item._id}
-                                className={`btn ${isActive === item.label ? "btn-outline" : "btn-filled"}`}
-                                onClick={() => toggleContent(item.label)}
-                            >
-                                {item.label}
-                            </button>
-                        ))}
-                    </div> */}
+                        {/* tabs */}
+                        {/* <div className="md:flex hidden justify-center items-center space-x-5">
+                            {tabs.tab.map((item: TabType) => (
+                                <button
+                                    key={item._id}
+                                    className={`btn ${isActive === item.label ? "btn-outline" : "btn-filled"}`}
+                                    onClick={() => toggleContent(item.label)}
+                                >
+                                    {item.label}
+                                </button>
+                            ))}
+                        </div> */}
+                    </div>
+
+                    {/* contents grid */}
+                    <div className="space-y-24">
+                        <Languages />
+                        <Frameworks />
+                        <Databases />
+                        <Others />
+
+                        {/* {isMobile ? 
+                        (
+                            <>
+                                <Languages />
+                                <Frameworks />
+                                <Databases />
+                                <Others />
+                            </>
+                        )
+                        :
+                        (
+                            <>
+                                {isActive === "Languages" && <Languages />}
+                                {isActive === "Frameworks" && <Frameworks />}
+                                {isActive === "Databases" && <Databases />}
+                                {isActive === "Others" && <Others />}
+                            </>
+                        )
+                    } */}
+                    </div>
                 </div>
-
-                {/* contents grid */}
-                <div className="space-y-24">
-                    <Languages />
-                    <Frameworks />
-                    <Databases />
-                    <Others />
-
-                    {/* {isMobile ? 
-                    (
-                        <>
-                            <Languages />
-                            <Frameworks />
-                            <Databases />
-                            <Others />
-                        </>
-                    )
-                    :
-                    (
-                        <>
-                            {isActive === "Languages" && <Languages />}
-                            {isActive === "Frameworks" && <Frameworks />}
-                            {isActive === "Databases" && <Databases />}
-                            {isActive === "Others" && <Others />}
-                        </>
-                    )
-                } */}
-                </div>
-            </div>
+            </FadeIn>
         </section>
     )
 }

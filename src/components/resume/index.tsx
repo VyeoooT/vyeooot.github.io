@@ -1,3 +1,4 @@
+import FadeIn from "../effects"
 import Title from "../title"
 // import { resumeTabs } from "../../constants"
 // import { useEffect, useState } from "react"
@@ -29,44 +30,46 @@ function Resumes() {
     return (
         // Resumes
         <section id="resume" className="xl:max-w-screen-xl sm:container">
-            <div className="mx-auto md:px-10 px-5">
-                {/* title - tabs */}
-                <div className="text-center">
-                    <Title title="+2 year of experience" description="my resume" />
+            <FadeIn>
+                <div className="mx-auto md:px-10 px-5">
+                    {/* title - tabs */}
+                    <div className="text-center">
+                        <Title title="+2 year of experience" description="my resume" />
 
-                    {/* <div className="md:flex hidden justify-center items-center space-x-5">
-                        {resumeTabs.tab.map((item: TabType) => (
-                            <button
-                                key={item._id}
-                                className={`btn ${isActive === item.label ? "btn-outline" : "btn-filled"}`}
-                                onClick={() => toggle(item.label)}
-                            >
-                                {item.label}
-                            </button>
-                        ))}
+                        {/* <div className="md:flex hidden justify-center items-center space-x-5">
+                            {resumeTabs.tab.map((item: TabType) => (
+                                <button
+                                    key={item._id}
+                                    className={`btn ${isActive === item.label ? "btn-outline" : "btn-filled"}`}
+                                    onClick={() => toggle(item.label)}
+                                >
+                                    {item.label}
+                                </button>
+                            ))}
+                        </div> */}
+                    </div>
+
+                    {/* component */}
+                    <EduWork />
+                    {/* <div>
+                        {isMobile ? 
+                        (
+                            <>
+                                <ProcessSkill />
+                                <EduWork />
+                            </>
+                        )
+                        :
+                        (
+                            <>
+                                {isActive === "Education & Work" &&  <EduWork />}
+                                {isActive === "Professional Skills" && <ProcessSkill />}
+                            </>
+                        )
+                    }
                     </div> */}
                 </div>
-
-                {/* component */}
-                <EduWork />
-                {/* <div>
-                    {isMobile ? 
-                    (
-                        <>
-                            <ProcessSkill />
-                            <EduWork />
-                        </>
-                    )
-                    :
-                    (
-                        <>
-                            {isActive === "Education & Work" &&  <EduWork />}
-                            {isActive === "Professional Skills" && <ProcessSkill />}
-                        </>
-                    )
-                }
-                </div> */}
-            </div>
+            </FadeIn>
         </section>
     )
 }
