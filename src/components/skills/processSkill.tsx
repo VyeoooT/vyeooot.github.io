@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 function ProcessSkill() {
     return (
         // processSkill
@@ -8,16 +10,16 @@ function ProcessSkill() {
                     <p className="text-sm uppercase font-medium">HTML5/CSS</p>
 
                     <span className="w-full h-2 bg-second rounded-full inline-flex mt-2">
-                        {/* <motion.span
-                            className="relative w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full"
+                        <motion.span
+                            className="relative w-[80%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full"
                             initial={{ x: "-100%", opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
-                        > */}
-                        <div className="relative w-[80%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full">
+                        >
+                        <div className="relative w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full">
                             <span className="absolute max-md:hidden -top-7 right-0">80%</span>
                         </div>
-                        {/* </motion.span> */}
+                        </motion.span>
                     </span>
                 </div>
 
@@ -26,16 +28,16 @@ function ProcessSkill() {
                     <p className="text-sm uppercase font-medium">React/Javascript/TypeScript</p>
 
                     <span className="w-full h-2 bg-second rounded-full inline-flex mt-2">
-                        {/* <motion.span
-                            className="relative w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full"
+                        <motion.span
+                            className="relative w-[75%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full"
                             initial={{ x: "-100%", opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
-                        > */}
-                        <div className="relative w-[75%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full">
+                        >
+                        <div className="relative w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full">
                             <span className="absolute max-md:hidden -top-7 right-0">75%</span>
                         </div>
-                        {/* </motion.span> */}
+                        </motion.span>
                     </span>
                 </div>
 
@@ -44,16 +46,16 @@ function ProcessSkill() {
                     <p className="text-sm uppercase font-medium">WordPress: PageBuilder/UX Builder/Flatsome/Elementor</p>
 
                     <span className="w-full h-2 bg-second rounded-full inline-flex mt-2">
-                        {/* <motion.span
+                        <motion.span
                             className="relative w-[80%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full"
                             initial={{ x: "-100%", opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
-                        > */}
-                        <div className="relative w-[80%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full">
+                        >
+                        <div className="relative w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full">
                             <span className="absolute max-md:hidden -top-7 right-0">80%</span>
                         </div>
-                        {/* </motion.span> */}
+                        </motion.span>
                     </span>
                 </div>
 
@@ -62,16 +64,16 @@ function ProcessSkill() {
                     <p className="text-sm uppercase font-medium">Git/SVN</p>
 
                     <span className="w-full h-2 bg-second rounded-full inline-flex mt-2">
-                        {/* <motion.span
-                            className="relative w-[75%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full"
+                        <motion.span
+                            className="relative w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full"
                             initial={{ x: "-100%", opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
-                        > */}
-                        <div className="relative w-[80%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full">
+                        >
+                        <div className="relative w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-full">
                             <span className="absolute max-md:hidden -top-7 right-0">80%</span>
                         </div>
-                        {/* </motion.span> */}
+                        </motion.span>
                     </span>
                 </div>
             </div>
