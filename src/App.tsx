@@ -6,7 +6,7 @@ import GoToTop from "./components/navigations/goToTop"
 import Header from "./components/navigations/header"
 import Projects from "./components/projects"
 import Resumes from "./components/resume"
-import Skills from "./components/skills"
+// import Skills from "./components/skills"
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
       <Header />
       <div className="space-y-14">
         <About />
-        <Skills />
+        {/* <Skills /> */}
+        <LibraryFramework />
         <Resumes />
         <Projects />
-        <LibraryFramework />
         <Contact />
         <Footer />
       </div>

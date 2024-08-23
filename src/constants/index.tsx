@@ -26,11 +26,16 @@ export const navLinks = {
             title: "About",
             link: "about",
         },
+        // {
+        //     _id: 1002,
+        //     title: "Skills",
+        //     link: "skills",
+        // },
         {
-            _id: 1002,
-            title: "Skills",
-            link: "skills",
-        },
+          _id: 1002,
+          title: "Frameworks",
+          link: "frameworks",
+      },
         {
             _id: 1003,
             title: "Resume",
@@ -43,11 +48,6 @@ export const navLinks = {
         },
         {
             _id: 1005,
-            title: "Frameworks",
-            link: "frameworks",
-        },
-        {
-            _id: 1006,
             title: "Contact",
             link: "contact",
         },

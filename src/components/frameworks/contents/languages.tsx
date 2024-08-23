@@ -1,3 +1,4 @@
+import assets from "../../../assets"
 import Grid from "../grid"
 import Title from "../titleFramework"
 
@@ -11,12 +12,12 @@ function Languages() {
 
                 {/* grid logo components */}
                 <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-14">
-                    <Grid imgSrc="https://contents.rizerssoft.com/uploads/thumbnail_html5_cf637791b4.png" label="HTML5"/>
-                    <Grid imgSrc="https://contents.rizerssoft.com/uploads/thumbnail_css3_f0cc386fa1.png" label="CSS3"/>
-                    <Grid imgSrc="https://contents.rizerssoft.com/uploads/thumbnail_Java_Script_logo_ec01d0577d.png" label="Javascript"/>
-                    <Grid imgSrc="https://contents.rizerssoft.com/uploads/thumbnail_Typescript_logo_2020_svg_13c635e95c.png" label="Typescript"/>
-                    <Grid imgSrc="https://contents.rizerssoft.com/uploads/thumbnail_PHP_logo_svg_7def683005.png" label="PHP"/>
-                    <Grid imgSrc="https://contents.rizerssoft.com/uploads/thumbnail_cpp_9bde715005.png" label="C++"/>
+                    <Grid imgSrc={assets.html5} label="HTML5"/>
+                    <Grid imgSrc={assets.css3} label="CSS3"/>
+                    <Grid imgSrc={assets.js} label="Javascript"/>
+                    <Grid imgSrc={assets.typescript} label="Typescript"/>
+                    {/* <Grid imgSrc={assets.php} label="PHP"/> */}
+                    <Grid imgSrc={assets.cpp} label="C++"/>
                 </div>
             </div>
         </>

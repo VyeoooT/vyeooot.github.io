@@ -1,5 +1,5 @@
-import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faArrowUpRightFromSquare, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpRightFromSquare, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FadeIn from "../effects";
 
@@ -26,12 +26,12 @@ function About() {
 
                             {/* button link */}
                             <div className="font-oswald md:hidden flex justify-center items-center space-x-4">
-                                <a href="mailto:vlinh52000@gmail.com">
+                                {/* <a href="mailto:vlinh52000@gmail.com">
                                     <button className="btn btn-filled">
                                         <FontAwesomeIcon icon={faEnvelope} />
                                         Contact Me
                                     </button>
-                                </a>
+                                </a> */}
                                 
                                 <a href="https://www.topcv.vn/xem-cv/Ug4DUlADUFECAQELUAUPU1AKVAFUVAVSDAMCUw1321" target="_blank" rel="noopener noreferrer">
                                     <button className="btn-link">
@@ -44,25 +44,28 @@ function About() {
 
                         {/* desc */}
                         <div className="md:w-96 flex gap-2 md:ml-auto mt-9">
-                            <ul className="font-oswald max-w-md lg:text-sm text-base space-y-2 md:pr-2 md:pl-0 px-2 mx-auto">
+                            <ul className="font-oswald max-w-md lg:text-xl text-base space-y-2 md:pr-2 md:pl-0 px-2 mx-auto">
                                 <li>Short-term goal: Desire to join the company to learn more work experience job.</li>
                                 <li>Long-term goal: Desire to contribute to building the company and become a position important in the team.</li>
                             </ul>
                         </div>
 
                         {/* socials */}
-                        <div className="font-oswald flex items-center md:justify-end justify-center gap-6 mt-9 text-gray-600 dark:text-gray-200">
-                            <p>Follow Me</p>
+                        <div className="font-oswald flex md:flex-row flex-col items-center md:justify-end justify-center gap-6 mt-9 text-gray-600 dark:text-gray-200">
+                            <p className="md:text-base text-sm">Contact Me</p>
 
                             <div className="flex justify-end items-center gap-3">
-                                <a className="bg-circle-social" href="https://www.instagram.com/tlinhvn/" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faInstagram} />
+                                <a className="bg-circle-social" href="tel:+84 365 037 985" target="_blank" rel="noopener noreferrer"  title="0365 037 985">
+                                  <FontAwesomeIcon icon={faPhone} />
                                 </a>
-                                <a className="bg-circle-social" href="https://github.com/VyeoooT" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faGithub} />
+                                <a className="bg-circle-social" href="mailto:vlinh52000@gmail.com" target="_blank" rel="noopener noreferrer" title="vlinh52000@gmail.com">
+                                  <FontAwesomeIcon icon={faEnvelope} />
                                 </a>
                                 <a className="bg-circle-social" href="https://www.linkedin.com/in/vulinhtruong/" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faLinkedin} />
+                                  <FontAwesomeIcon icon={faLinkedin} />
+                                </a>
+                                <a className="bg-circle-social" href="https://github.com/VyeoooT" target="_blank" rel="noopener noreferrer">
+                                  <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>
                         </div>
@@ -82,21 +85,21 @@ function About() {
                             </li>
 
                             <li>
-                                <div data-slot="count" className="count">3 +</div>
+                                <div data-slot="count" className="count">2 +</div>
                                 <div>Completed <span className="text-primary">Project</span></div>
                             </li>
 
                             {/* button link */}
                             <li className="hidden md:flex lg:flex-row flex-col-reverse justify-center items-center gap-4">
-                                <a href="mailto:vlinh52000@gmail.com">
+                                {/* <a href="mailto:vlinh52000@gmail.com">
                                     <button className="btn btn-outline">
                                         <FontAwesomeIcon icon={faEnvelope} />
                                         Contact Me
                                     </button>
-                                </a>
+                                </a> */}
                                 
                                 <a href="https://www.topcv.vn/xem-cv/Ug4DUlADUFECAQELUAUPU1AKVAFUVAVSDAMCUw1321" target="_blank" rel="noopener noreferrer">
-                                    <button className="btn-link">
+                                    <button className="md:btn-link btn btn-outline">
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                         See Detail CV
                                     </button>
