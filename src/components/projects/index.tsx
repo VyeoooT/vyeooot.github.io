@@ -40,7 +40,7 @@ function Projects() {
                             imgSrc={assets.cardsCatalog}
                         />
 
-                        <ProjectCard
+                        {/* <ProjectCard
                             tag={[
                                 "Vite",
                                 "React Typescript",
@@ -51,7 +51,7 @@ function Projects() {
                             linkGithub="#"
                             linkPreview="#"
                             imgSrc="https://contents.rizerssoft.com/uploads/large_banhang28_rizerssoft_online_a4b22f10f5.png"
-                        />
+                        /> */}
                     </div>
                 </div>
             </FadeIn>
