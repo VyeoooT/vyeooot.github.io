@@ -3,6 +3,7 @@ import logo from './logo.png'
 // img project
 import photogram from './projects/study-photogram.png'
 import cardsCatalog from './projects/study-cards-catalog.png'
+import homePagePKG from './projects/home-page-pkg.png'
 
 // img framework
 import cpp from './frameworks/cpp.webp'
@@ -26,6 +27,7 @@ export default {
 
   photogram,
   cardsCatalog,
+  homePagePKG,
 
   cpp,
   css3,

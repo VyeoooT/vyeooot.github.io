@@ -40,18 +40,18 @@ function Projects() {
                             imgSrc={assets.cardsCatalog}
                         />
 
-                        {/* <ProjectCard
+                        <ProjectCard
                             tag={[
-                                "Vite",
-                                "React Typescript",
-                                "Tailwindcss",
+                                "HTML",
+                                "CSS",
+                                "JS",
                             ]}
-                            label="Project 3"
-                            description=""
-                            linkGithub="#"
-                            linkPreview="#"
-                            imgSrc="https://contents.rizerssoft.com/uploads/large_banhang28_rizerssoft_online_a4b22f10f5.png"
-                        /> */}
+                            label="Home Page APG"
+                            description="An Phu Gia homepage, using pure HTML, CSS, JS"
+                            linkGithub="https://github.com/VyeoooT/test"
+                            linkPreview="http://test.linhtv.io.vn/"
+                            imgSrc={assets.homePagePKG}
+                        />
                     </div>
                 </div>
             </FadeIn>
